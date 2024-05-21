@@ -2,63 +2,110 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="ueb_favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bosque Virtual Login</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Formulario</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/ueb_favicon.ico"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/index-cfed9e03.css">
+    <link href="assets/css/tailwind.css" rel="stylesheet" />
   </head>
-  <!-- bg-middle bg-background bg-contain bg-no-repeat bg-center bg-top -->
-  <body
-    class="
-      font-Inter
-      subpixel-antialiased
-      min-h-screen
-      bg-background
-    "
-  >
+  <body class="bg-background min-h-screen subpixel-antialiased">
+    <div
+      class="bg-heroBackground absolute mx-auto h-96 max-h-96 w-screen"
+      alt=""
+    ></div>
+    <div
+      class="bg-Bforms absolute mx-auto h-96 max-h-96 w-screen bg-cover bg-center bg-top bg-no-repeat"
+      alt=""
+    ></div>
+    <div
+      class="bg-Bleft absolute mx-auto h-96 max-h-96 w-screen bg-cover bg-right bg-no-repeat"
+      alt=""
+    ></div>
+    <div
+      class="bg-Bright absolute mx-auto h-96 max-h-96 w-screen bg-cover bg-left bg-no-repeat"
+      alt=""
+    ></div>
 
-  <div class="mx-auto bg-heroBackground w-screen max-h-96 h-96 absolute" alt=""></div>
-  <div class="mx-auto bg-Bforms bg-cover bg-no-repeat bg-center bg-top w-screen max-h-96 h-96 absolute" alt=""></div>
-  <div class="mx-auto bg-Bleft bg-cover bg-no-repeat bg-right w-screen max-h-96 h-96 absolute" alt=""></div>
-  <div class="mx-auto bg-Bright bg-cover bg-no-repeat bg-left w-screen max-h-96 h-96 absolute" alt=""></div>
-
-    <section class="container mx-auto flex flex-col gap-16 pt-20 px-5 h-screen relative">
+    <section
+      class="container relative mx-auto flex h-screen flex-col gap-16 px-5 pt-20"
+    >
       <div class="w-100">
-        <img class="mx-auto" src="./assets/aulas-virtuales-logo-f913563a.svg" alt="" />
+        <img
+          class="mx-auto"
+          src="assets/images/aulas-virtuales-logo-f913563a.svg"
+          alt=""
+        />
       </div>
-      <div class="w-100">
-        <p class="text-lg text-white mx-auto text-center font-semibold">Selecciona la plataforma a la que deseas acceder</p>
-      </div>
-      <div class="flex gap-x-10 gap-y-10 w-full max-w-4xl mx-auto flex-wrap">
-        <div class="flex-1 p-12 bg-white rounded-lg flex flex-col gap-y-7 drop-shadow-2xl">
-          <h2 class="text-2xl font-bold">Bosque Digital</h2>
-          <p class="text-sm">
-            Selecciona esta opción si te perteneces a la comunidad universitaria
-            (Administrativos, Docentes o Estudiantes).
+      <div class="mx-auto flex w-full flex-wrap md:w-3/6">
+        <div
+          class="flex flex-1 flex-col gap-y-7 rounded-lg bg-white p-12 drop-shadow-2xl"
+        >
+          <h2 class="text-center text-2xl font-bold">
+            Acceso a la Colección Digital
+          </h2>
+          <p class="text-center text-sm" style="color: gray">
+            Te invitamos a descubrir nuestra colección digital, un recurso que
+            reúne la producción académica y científica de nuestra comunidad.
           </p>
-          <a href="" class="bg-greenLight text-greenDark rounded-lg w-full text-center p-5 font-bold flex justify-center gap-x-7">Iniciar Sesión <span class="flex"><img src="./assets/Icon-a6308d68.svg"/></span></a>
+          <form class="space-y-4" action="" method="post" id="user-login">
+            <div class="flex-none space-x-0">
+              <div class="flex-1 pb-4">
+                <label class="block">
+                  <span class="font-semibold"
+                    >Usuario de correo institucional</span
+                  >
+                  <input
+                    type="text"
+                    name="user"
+                    class="input-form"
+                    placeholder="nombre@unbosque.edu.co"
+                  />
+                </label>
+              </div>
+              <div class="flex-1">
+                <label class="block">
+                  <span class="font-semibold"
+                    >Contraseña de su correo institucional</span
+                  >
+                  <input
+                    type="password"
+                    name="pass"
+                    class="input-form"
+                    placeholder=""
+                  />
+                </label>
+              </div>
+            </div>
+
+            <!-- /.flex row -->
+            <div class="sm:flex sm:justify-between">
+              <button
+                class="bg-greenLight text-greenDark flex w-full justify-center gap-x-7 rounded-lg p-5 text-center font-bold"
+              >
+                Iniciar Sesión
+                <span class="flex"
+                  ><img src="./assets/images/Icon-a6308d68.svg"
+                /></span>
+              </button>
+            </div>
+            <!-- /.flex row -->
+          </form>
         </div>
-        <div class="flex-1 p-12 bg-white rounded-lg flex flex-col gap-y-7 drop-shadow-2xl">
-        <h2 class="text-2xl font-bold">Educación Continuada</h2>
-        <p class="text-sm">
-        Selecciona esta opción si te inscribiste a alguno de los cursos ofrecidos por el área de educación continuada de La Universidad.
-        </p>
-        <a href="" class="bg-greenLight text-greenDark rounded-lg w-full text-center p-5 font-bold flex justify-center gap-x-7">Iniciar Sesión <span class="flex"><img src="./assets/Icon-a6308d68.svg"/></span></a>
-      </div>
       </div>
       <div class="w-100">
-        <h3 class="text-md text-white mx-auto text-center mb-14 opacity-70">
+        <h3 class="text-md mx-auto mb-14 text-center text-white opacity-70">
           Desarrollador por La Universidad de La Sabana
         </h3>
       </div>
     </section>
-
   </body>
 </html>
