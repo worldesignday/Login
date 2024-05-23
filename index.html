@@ -38,23 +38,22 @@
     <section
       class="container relative mx-auto flex h-screen flex-col gap-16 px-5 pt-20"
     >
-      <div class="w-100">
-        <img
-          class="mx-auto"
-          src="assets/images/aulas-virtuales-logo-f913563a.svg"
-          alt=""
-        />
-      </div>
       <div class="mx-auto flex w-full flex-wrap md:w-3/6">
         <div
           class="flex flex-1 flex-col gap-y-7 rounded-lg bg-white p-12 drop-shadow-2xl"
         >
+					<div class="w-100">
+						<img
+							class="mx-auto"
+							src="assets/images/aulas-virtuales-logo-f913563a.svg"
+							alt=""
+						/>
+					</div>
           <h2 class="text-center text-2xl font-bold">
-            Acceso a la Colección Digital
+						Acceso a E-resources
           </h2>
           <p class="text-center text-sm" style="color: gray">
-            Te invitamos a descubrir nuestra colección digital, un recurso que
-            reúne la producción académica y científica de nuestra comunidad.
+						Te invitamos a descubrir nuestra colección digital compuesta por bases de datos, gestores bibliográficos, objetos virtuales de aprendizaje y más recursos electrónicos.
           </p>
           <form class="space-y-4" action="" method="post" id="user-login">
             <div class="flex-none space-x-0">
@@ -67,9 +66,11 @@
                     type="text"
                     name="user"
                     class="input-form"
-                    placeholder="nombre@unbosque.edu.co"
+                    placeholder=""
                   />
                 </label>
+								<small class="italic" style="color: gray">
+Escribe el nombre de usuario de tu correo institucional sin @unbosque.edu.co</small>
               </div>
               <div class="flex-1">
                 <label class="block">
@@ -83,6 +84,7 @@
                     placeholder=""
                   />
                 </label>
+								<small class="italic" style="color: gray;"><p style="line-height:1;padding-top:6px;">Si no tienes o no funciona la contraseña de tu correo institucional, escríbenos al correo <a  style="text-decoration:underline" href="mailto:mesadeservicio@unbosque.edu.co">mesadeservicio@unbosque.edu.co</a> con los detalles de tu caso</p></small>
               </div>
             </div>
 
